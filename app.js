@@ -5,18 +5,24 @@ let amigosIngresados = [];
 
 //función para limpiar el recuadro donde se solicita ingresar nombres de amigos.
 function limpiarCaja() {
-    document.getElementbyID("amigo").value = "";
+    document.getElementById("amigo").value = "";
+    return;
 }
 
 //Generar función para añadir los amigos a la lista. 
-function agregaramigo(){
-    let solicitud = String(document.getElementById("amigo"));
-    if(solicitud = ""){
+function agregarAmigo(){
+    let solicitud = String(document.getElementById("amigo").value);
+    if(solicitud == ""){
         alert("Por favor, inserte un nombre...");
     } else {
         amigosIngresados.push(solicitud);
+        console.log (amigosIngresados);
     }
     limpiarCaja();
+    return;
 }
+
+
+
 
 
