@@ -3,3 +3,20 @@
 //Creación de lista que recopilará los nombres de los amigos que el usuario ingrese.
 let amigosIngresados = [];
 
+//función para limpiar el recuadro donde se solicita ingresar nombres de amigos.
+function limpiarCaja() {
+    document.getElementbyID("amigo").value = "";
+}
+
+//Generar función para añadir los amigos a la lista. 
+function agregaramigo(){
+    let solicitud = String(document.getElementById("amigo"));
+    if(solicitud = ""){
+        alert("Por favor, inserte un nombre...");
+    } else {
+        amigosIngresados.push(solicitud);
+    }
+    limpiarCaja();
+}
+
+
