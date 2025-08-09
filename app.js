@@ -16,13 +16,24 @@ function agregarAmigo(){
         alert("Por favor, inserte un nombre...");
     } else {
         amigosIngresados.push(solicitud);
+        actualizandoLista();
         console.log (amigosIngresados);
     }
     limpiarCaja();
     return;
 }
 
-
+//Implementando una función para actualizar la lista de amigos!
+function actualizandoLista(){
+    let lista = document.getElementById("listaAmigos");
+    lista.innerHTML = "";
+    for(let i = 0; i < amigosIngresados.length; i++){
+        let amigo = amigosIngresados[i];
+        let elementoLista = document.createElement("li");
+        elementoLista.textContent = amigo;
+        lista.appendChild(elementoLista);
+    }
+}
 
 
 
