@@ -10,6 +10,11 @@
 # Descripción del Proyecto...
 El programa recopila los nombres que el usuario ingrese; estos se muestran en una lista visible por debajo del botón de añadir. Al hacer click en el botón "Sortear amigo" la aplicación escogerá un nombre pseudoaleatorio que posteriormente se mostrará en letras verdes. 
 
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+<img width="1913" height="971" alt="Captura de pantalla 2025-08-09 133533" src="https://github.com/user-attachments/assets/760b7484-bc57-4371-9ff4-97b88513c6d2" />
+
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
 # Funcionalidades 🐦‍⬛
 - Añadir nombres a lista visible.
 - Sortear nombres de la lista.
