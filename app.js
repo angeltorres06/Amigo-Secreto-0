@@ -35,5 +35,16 @@ function actualizandoLista(){
     }
 }
 
+//Función para sortear a los amigos¡!
+function sortearAmigo(){
+    if(amigosIngresados.length < 1){
+        alert("Es preciso que ingrese al menos un nombre para poder sortear...");
+    } else {
+        let indiceAleatorio = Math.floor(Math.random() * amigosIngresados.length);
+        let amigoSeleccionado = amigosIngresados[indiceAleatorio];
+        let resultado = document.getElementById("resultado");
+        resultado.innerHTML = "El amigo que he seleccionado es: " + amigoSeleccionado;
+    }
+}
 
 
